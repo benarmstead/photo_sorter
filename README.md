@@ -10,25 +10,25 @@ Your images will also be re-named to this format YYMMDD-HHMMSS
 
 ## Instalation
 
-`git clone ...`
+`git clone https://github.com/benarmstead/sort_by_year.git`
 
 ## Usage
 
 
 **Move pictures to new directory**
 
-`python3 main.py <your pictures directory>`
+`python3 src/main.py <your pictures directory>`
 
 **Copy pictures to new directory**
 
-`python3 main.py <your pictures directory> -c`
+`python3 src/main.py <your pictures directory> -c`
 
 ## Examples
 
 **Move pictures to new directory**
 
-`python3 main.py ~/Pictures`
+`python3 src/main.py ~/Pictures`
 
 **Copy pictures to new directory**
 
-`python3 main.py ~/Pictures -c`
+`python3 src/main.py ~/Pictures -c`
