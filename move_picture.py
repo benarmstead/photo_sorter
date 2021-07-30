@@ -2,7 +2,8 @@ import os
 import shutil
 
 class MovePictures:
-    def __init__(self, directory):
+    def __init__(self, directory, copy_flag):
+        self.copy_flag = copy_flag
         self.new_directory = directory
         self.make_if_not_exist(directory)
 
@@ -20,8 +21,10 @@ class MovePictures:
 
     def try_move(self, final_path, count, image_class):
         if(os.path.exists(final_path) == False):
-            # This needs to be shutil.move, is simply .copy for testing
-            shutil.copy(self.file_path, final_path)
+            if(self.copy_flag == True):
+                shutil.copy(self.file_path, final_path)
+            else:
+                shutil.move(self.file_path, final_path)
         else:
             print('Image name exists. Attempting new name.')
             count += 1
