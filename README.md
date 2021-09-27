@@ -1,4 +1,4 @@
-# Sort By year  
+# Photo sorter
 
 **Warning**
 
